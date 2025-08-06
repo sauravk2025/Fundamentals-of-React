@@ -14,23 +14,6 @@ This repository contains core concepts and practical examples of **React** using
 
 ---
 
-## 📁 Folder Structure
-
-/fundamentals-of-react
-│
-├── useStateExample.tsx
-├── useEffectExample.tsx
-├── useRefExample.tsx
-├── useContextExample.tsx
-├── PropsExample.tsx
-└── README.md
-
-yaml
-Copy
-Edit
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
