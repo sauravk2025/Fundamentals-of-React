@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# ⚛️ Fundamentals of React (with TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains core concepts and practical examples of **React** using **TypeScript (`.tsx`)**. It's ideal for beginners and intermediates who want to learn how to use **React hooks** and handle **props** in a strongly typed environment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Topics Covered
 
-## Expanding the ESLint configuration
+- ✅ `useState` – Manage component-level state
+- ✅ `useEffect` – Handle side effects (like API calls, timers)
+- ✅ `useRef` – Access and control DOM elements or mutable values
+- ✅ `useContext` – Manage and consume global state
+- ✅ Props – Passing data between components with type safety
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Folder Structure
+
+/fundamentals-of-react
+│
+├── useStateExample.tsx
+├── useEffectExample.tsx
+├── useRefExample.tsx
+├── useContextExample.tsx
+├── PropsExample.tsx
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/fundamentals-of-react.git
+cd fundamentals-of-react
 ```
+### 2. Install Dependencies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Make sure you have Node.js installed.
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 3. Run the Project
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+npm start
+This will start the development server and open the app in your browser.
+
+### 🛠 Tech Stack
+
+- React
+- TypeScript
+- Vite or CRA (React setup)
+- JSX/TSX
+
+### 📚 Learning Resources
+
+- React Docs
+- TypeScript with React
+- React Hooks
+
+### 🙌 Contributing
+Feel free to fork this repo, create new examples, or improve the current ones. Pull requests are welcome!
